@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #fafafa;
+}
+
+.logo-header-text {
+  font-size: 32px;
+  line-height: 40px;
+  color: #495371;
+  font-weight: bold;
+  margin: 0px 0px 0px 16px;
+}
+
+.logo-description-text {
+  color: #495371;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.logo-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.logo-description {
+  margin: 32px 0px 0px 0px;
+  /* border: 1px solid black; */
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  /* border: 1px solid black; */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  /* border: 1px solid black; */
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.calc-container {
+  position: static;
+  width: 448px;
+  height: 100%;
+  left: 424px;
+  top: 0px;
+  border: 1px solid black;
+}
