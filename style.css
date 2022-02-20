@@ -57,10 +57,114 @@
 }
 
 .calc-container {
-  position: static;
-  width: 448px;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 64px;
+  background: #98b4aa;
+  border-radius: 24px;
+  /* position: static; */
+  width: 320px;
+  height: 480px;
   /* left: 424px; */
-  top: 0px;
-  border: 1px solid black;
+  /* top: 0px; */
+  /* border: 1px solid black; */
+}
+
+.calc-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 12px;
+  border: 3px solid #495371;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #495371;
+  text-align: end;
+  width: 320px;
+  margin: 16px auto;
+  /* -moz-appearance: textfield; */
+}
+
+.calc-input:focus {
+  outline: none;
+}
+
+.calc-input::-webkit-outer-spin-button,
+.calc-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  /* opacity: 0; */
+}
+
+.primary-button-large {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background: #f1e0ac;
+  border-radius: 8px;
+  width: 320px;
+  height: 56px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #495371;
+  /* margin: 16px 0px; */
+}
+
+.primary-button-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 56px;
+  height: 56px;
+  background: #f1e0ac;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #495371;
+  margin: 0px 32px 0px 0px;
+}
+
+.calc-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  background-color: transparent;
+  margin: 16px 0px;
+}
+
+.secondary-button-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border: 2px solid #495371;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  background-color: transparent;
+}
+
+img {
+  background-color: transparent;
+}
+
+.equal {
+  background-color: #495371;
 }
