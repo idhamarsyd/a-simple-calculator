@@ -10,7 +10,6 @@ class Calculator {
   constructor(currentValue, nextValue) {
     this.currentValue = currentValue;
     this.nextValue = nextValue;
-    // displayField.value = nextValue;
     this.clear();
   }
 
@@ -33,10 +32,8 @@ class Calculator {
       this.compute();
     }
     this.operation = operation;
-    // console.log(currentValue);
     nextValue = currentValue;
     currentValue = "";
-    // nextValue = "";
   };
 
   compute = () => {
@@ -98,10 +95,6 @@ numberButtons.forEach((button) => {
 operationButtons.forEach((button) => {
   button.addEventListener("click", () => {
     calculator.chooseOperation(button.id);
-    // nextValue = currentValue;
-    // console.log(nextValue);
-    // console.log(currentValue);
-    // calculator.updateDisplay();
   });
 });
 
@@ -112,5 +105,4 @@ equalButton.addEventListener("click", (button) => {
 
 clearButton.addEventListener("click", () => {
   calculator.clear();
-  //   calculator.updateDisplay();
 });
