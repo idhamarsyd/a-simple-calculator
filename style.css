@@ -176,3 +176,16 @@ img {
 .equal {
   background-color: #495371;
 }
+
+.primary-button-large:hover,
+.primary-button-small:hover {
+  background: #ffecb2;
+}
+
+.equal:hover {
+  background: #66708c;
+}
+
+.secondary-button-small:hover {
+  border: 2px solid #ffecb2;
+}
