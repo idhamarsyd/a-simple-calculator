@@ -24,46 +24,63 @@
         </div>
       </div>
       <div class="calc-container">
-        <input type="number" class="calc-input" />
-        <div class="calc-nav">
-          <button class="primary-button-large clear">CLEAR</button>
-          <button class="primary-button-large clear">DELETE</button>
-        </div>
+        <input type="number" class="calc-input" data-display />
+        <button class="primary-button-large clear" id="clear-button" data-clear>
+          CLEAR
+        </button>
+        <!-- <div class="calc-nav">
+          <button class="primary-button-large clear" id="delete-button">
+            DELETE
+          </button>
+        </div> -->
         <div class="calc-row 1st">
-          <button class="primary-button-small num1">1</button>
-          <button class="primary-button-small num2">2</button>
-          <button class="primary-button-small num3">3</button>
-          <button class="secondary-button-small plus">
+          <button class="primary-button-small num1" data-number>1</button>
+          <button class="primary-button-small num2" data-number>2</button>
+          <button class="primary-button-small num3" data-number>3</button>
+          <button class="secondary-button-small plus" id="plus" data-operation>
             <img src="assets/plus.svg" alt="plus" />
           </button>
         </div>
         <div class="calc-row 1nd">
-          <button class="primary-button-small num4">4</button>
-          <button class="primary-button-small num5">5</button>
-          <button class="primary-button-small num6">6</button>
-          <button class="secondary-button-small minus">
+          <button class="primary-button-small num4" data-number>4</button>
+          <button class="primary-button-small num5" data-number>5</button>
+          <button class="primary-button-small num6" data-number>6</button>
+          <button
+            class="secondary-button-small minus"
+            id="minus"
+            data-operation
+          >
             <img src="assets/minus.svg" alt="minus" />
           </button>
         </div>
         <div class="calc-row 3rd">
-          <button class="primary-button-small num7">7</button>
-          <button class="primary-button-small num8">8</button>
-          <button class="primary-button-small num9">9</button>
-          <button class="secondary-button-small multiply">
+          <button class="primary-button-small num7" data-number>7</button>
+          <button class="primary-button-small num8" data-number>8</button>
+          <button class="primary-button-small num9" data-number>9</button>
+          <button
+            class="secondary-button-small multiply"
+            id="multiply"
+            data-operation
+          >
             <img src="assets/multiply.svg" alt="multiply" />
           </button>
         </div>
         <div class="calc-row 4th">
-          <button class="primary-button-small num0">0</button>
-          <button class="primary-button-small dot">.</button>
-          <button class="primary-button-small equal">
+          <button class="primary-button-small num0" data-number>0</button>
+          <button class="primary-button-small dot" data-number>.</button>
+          <button class="primary-button-small equal" data-equal>
             <img src="assets/equal.svg" alt="equal" />
           </button>
-          <button class="secondary-button-small divide">
+          <button
+            class="secondary-button-small divide"
+            id="division"
+            data-operation
+          >
             <img src="assets/divide.svg" alt="divide" />
           </button>
         </div>
       </div>
     </div>
+    <script defer src="app.js"></script>
   </body>
 </html>
