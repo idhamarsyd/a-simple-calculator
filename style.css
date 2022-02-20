@@ -91,6 +91,14 @@
   /* -moz-appearance: textfield; */
 }
 
+.calc-nav {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+}
+
 .calc-input:focus {
   outline: none;
 }
@@ -110,14 +118,14 @@
   padding: 0px;
   background: #f1e0ac;
   border-radius: 8px;
-  width: 320px;
+  width: 128px;
   height: 56px;
   border: none;
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
   color: #495371;
-  /* margin: 16px 0px; */
+  margin: 0px 16px;
 }
 
 .primary-button-small {
